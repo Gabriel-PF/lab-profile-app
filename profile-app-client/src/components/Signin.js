@@ -11,7 +11,7 @@ const Signin = () => {
   const handleUsername = (e) => setUsername(e.target.value);
   const handlePassword = (e) => setPassword(e.target.value);
   const navigate = useNavigate();
-  const { storeToken, authenticateUser } = useContext(AuthContext); // Get the stored token from the localStorage
+  const { storeToken, authenticateUser } = useContext(AuthContext); 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -21,7 +21,7 @@ const Signin = () => {
       });
 
       storeToken(data);
-      //authenticateUser();
+      authenticateUser();
       navigate('/profile');
     } catch (error) {}
   };

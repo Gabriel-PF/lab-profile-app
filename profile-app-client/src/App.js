@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage';
 import Login from './pages/Login';
 import SignUpPage from './pages/SignUpPage';
 import ProfilePage from './pages/ProfilePage';
-import React, { Component }  from 'react';
+import React from 'react';
 
 function App() {
   return (
